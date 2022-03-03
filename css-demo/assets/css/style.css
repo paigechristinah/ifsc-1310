@@ -4,6 +4,16 @@ Stylesheet for CSS Demo
 
 */
 
+/*-----------------Box Sizing----------------*/
+
+html {
+box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 body {
     background-color:brown;
 }
