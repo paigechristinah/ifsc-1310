@@ -4,16 +4,64 @@ Stylesheet for CSS Demo
 
 */
 
-/*-----------------Box Sizing----------------*/
+/* ---------------Box Sizing----------------- */
 
 html {
-box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
     box-sizing: inherit;
-}
+  }
+  
 body {
-    background-color:brown;
+    background-color:#EBC3BC;
+}
+
+/* ---------------Global Styles----------------- */
+
+
+/*Color Schemes
+Primary- #D49F9F
+ */
+body {
+  font-family: 'Playfair Display', serif;
+  margin:0;
+}
+
+header.primary{
+background-color:#D49F9F;
+text-align:center;
+padding: 40px;
+}
+
+header.primary h1{
+  font-size: 2.3rem;
+}
+
+header.primary h1 a{
+  color:black;
+  text-decoration:none;
+}
+
+header.primary h2{
+  font-size: 1.8rem;
+  margin:20px auto 40px;
+  color:white
+}
+
+header.primary nav{}
+header.primary nav ul{
+  padding:0;
+}
+header.primary nav ul li{
+  list-style-type:none;
+
+}
+header.primary nav ul li a{
+  color:black;
+text-decoration:none;
+padding:8px 16px;
+display:inline-block;
 }
