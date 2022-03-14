@@ -26,6 +26,10 @@ body {
     background-color:#EBC3BC;
 }
 
+img{
+  max-width:100%;
+}
+
 /* ---------------Global Styles----------------- */
 
 
@@ -66,7 +70,7 @@ header.primary nav ul{
   padding:0;
   display:flex;
   flex-direction:row;
-background-color:lightsalmon;
+background-color:lightcoral;
 justify-content:space-evenly;
 border-radius: 20px 40px 90px 20px;
 }
@@ -93,36 +97,108 @@ h1, h2, h3, h4, h5, h6{
 
 
 section#intro{
-  border-bottom:1px dotted #c0c0c0;
-  padding-bottom:2.2rem;
+  border-bottom:1px dotted #73412F;
+  padding-bottom:1.2rem;
 }
 
 #intro h2{
   color:#73412F;
-  border-bottom:1px dotted #c0c0c0;
+  border-bottom:1px dotted #73412F;
 }
 
 
 
 
 
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between; 
+}
+
+
+#content article.post{
+  width:30%;
+  box-shadow:0 4px 8px rgba(0, 0, 0,1);
+padding:10px;
+border-radius:8px;
+font-size:.5rem;
+transition:.3s;
+}
 
 
 
+#content article.post:hover{
+  box-shadow:0 4px 8px rgba(0, 0, 0,.5);
+}
+
+
+time.post-date, figcaption, .post-meta{
+  text-transform:capitalize;
+  color:#73412F;
+}
+
+.post figure{
+margin:0;
+}
+
+.post img{
+  border:1px solid #73412F;
+  padding:2px;
+  margin: 5px 0;
+}
 
 
 
+.post a{
+  color:#73412F;
+  transition:.3s;
+}
+
+.post a:hover, .post a:active{
+  text-decoration:none;
+color:black
+}
 
 
 
+aside[role="complementary"]{
+background-color:#D49F9F;
+padding:1.5rem;
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between; 
+}
 
 
 
+aside article.widget{
+  width:45%
+}
+
+article.widget a{
+  color:#73412F;
+  display:block;
+  margin-top:.8rem;
+}
+
+article.widget footer{
+  display:none;
+}
 
 
 
-
-
+#colophon h6{
+  background-color:#73412F;
+padding:20px;
+margin:0;
+text-align:center;
+font-size:.8rem;
+text-transform:capitalize;
+}
 
 
 
