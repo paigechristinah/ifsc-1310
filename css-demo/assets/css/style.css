@@ -30,6 +30,26 @@ img{
   max-width:100%;
 }
 
+.img-right{
+  float:right;
+  margin-left:20px;
+  border: 1px solid #73412F;
+  padding:5px;
+}
+
+.img-left{
+  float:left;
+  margin-right:20px;
+  border: 1px solid #73412F;
+  padding:5px;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border: 1px solid #73412F;
+  padding:5px;
+}
 /* ---------------Global Styles----------------- */
 
 
@@ -106,7 +126,11 @@ section#intro{
   border-bottom:1px dotted #73412F;
 }
 
-
+h4{
+  border-bottom: solid#73412F;
+  border-top: solid #73412F;
+  text-align:center;
+}
 
 
 
@@ -114,6 +138,9 @@ section#intro{
   display:flex;
   flex-direction:row;
   justify-content:space-between; 
+  border-bottom:1px dotted #73412F;
+  padding-bottom:1.2rem;
+
 }
 
 
@@ -201,6 +228,124 @@ text-transform:capitalize;
 }
 
 
+
+
+
+#additional-elements h2{
+color:#73412F;
+border-bottom 1px dotted #73412F;
+}
+
+
+#additional-elements a{
+color:#73412F;
+}
+
+#additional-elements a:hover{
+text-decoration:none;
+}
+
+
+#additional-elements h3{
+  border-left:10px solid #73412F;
+  padding: 12px;
+}
+
+
+table{
+width:100%;
+border:1px solid #73412F;
+border-collapse:collapse;
+}
+
+
+
+tr:nth-child(even){
+  background-color:#D49F9F;
+}
+
+tr:hover{
+background-color:#A64B5B;
+}
+
+
+th{
+background-color: lightcoral;
+width:33%;
+padding:8px;
+}
+
+td:nth-child(2n),td:nth-child(3n){
+
+  text-align:right;
+}
+
+td{
+  border:1px solid #73412F;
+  padding:5px;
+}
+
+
+table caption{
+  color:#73412F;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+
+
+#additional-elements ol{
+list-style-type:circle;
+list-style-position:outside;
+}
+
+
+#additional-elements ol li{
+list-style-type:circle;
+}
+
+#additional-elements ul{
+  list-style-type:square;
+}
+
+#additional-elements ul ul{
+  list-style-type:disc;
+}
+
+
+
+dt{font-weight:bold;
+}
+
+dd{
+  margin-left:0;
+}
+
+dd + dt{
+margin-top:1rem;
+}
+
+
+
+#additional-elements blockquote{
+
+  background-color:lightcoral;
+  padding:30px 40px;
+border:5px double #73412F;
+border-radius:15px;
+font-size:1.2rem;
+}
+
+
+#additional-elements cite{
+  display:block;
+  font-size:1rem;
+  text-align:right;
+  font-weight:bold;
+  margin-top:1.5rem;
+  color:#73412F;
+}
 
 @media screen and (max-width:500px){
   header.primary nav ul{
