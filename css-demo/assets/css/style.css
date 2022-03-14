@@ -15,6 +15,13 @@ html {
     box-sizing: inherit;
   }
   
+  /*---------Utility Classes--------*/
+
+.container{
+  width:70vw;
+  margin:40px auto;
+}
+
 body {
     background-color:#EBC3BC;
 }
@@ -51,9 +58,17 @@ header.primary h2{
   color:white
 }
 
-header.primary nav{}
+header.primary nav{
+  width:80vw;
+  margin:0; auto;
+}
 header.primary nav ul{
   padding:0;
+  display:flex;
+  flex-direction:row;
+background-color:lightsalmon;
+justify-content:space-evenly;
+border-radius: 20px 40px 90px 20px;
 }
 header.primary nav ul li{
   list-style-type:none;
@@ -64,4 +79,56 @@ header.primary nav ul li a{
 text-decoration:none;
 padding:8px 16px;
 display:inline-block;
+transition:.3s;
+}
+header.primary nav a:hover{
+background-color:rgba(0, 0, 0,.8);
+}
+
+h1, h2, h3, h4, h5, h6{
+  color:lightcoral;
+}
+
+
+
+
+section#intro{
+  border-bottom:1px dotted #c0c0c0;
+  padding-bottom:2.2rem;
+}
+
+#intro h2{
+  color:#73412F;
+  border-bottom:1px dotted #c0c0c0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px){
+  header.primary nav ul{
+    flex-direction:column;
+  }
+
 }
