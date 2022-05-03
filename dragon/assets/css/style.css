@@ -98,7 +98,7 @@ header.primary h1 a {
 }
 
 header.primary h2 {
-  font-family: "Goldman", cursive;
+  font-family: 'Playfair Display SC', serif;
   font-size: 2em;
   color:#F29849;
   margin: 20px auto 40px;
@@ -123,38 +123,39 @@ header.primary nav li {
 
 header.primary nav a:link,
 header.primary nav a:visited {
-  color: white;
+  color: #F29849;
   text-decoration: none;
   background-color: #000000;
-  background-color: rgba(142, 166, 184, 0.4);
   padding: 8px 16px;
   border-radius: 10px;
-  transition: 0.6s;
+  transition: 0.4s;
   display: block;
 }
 
 header.primary nav a:hover,
 header.primary nav a:active {
-  background-color: rgba(51, 83, 107, 0.8);
+  background-color: #ffffff;
 }
 
 /* ------------- Content --------------- */
 
 section#content {
   padding: 4em 0;
+  background-color: grey;
 }
 
 section#content h2{
-  font-family: "Goldman", cursive;
+  font-family: 'Alegreya SC', serif;
   font-size: 2.2em;
-  color: #33536b;
+  color: #034AA6;
   text-align:center;
 }
+
 
 /* ------------- Articles --------------- */
 
 section#articles {
-  background: #181c1f;
+  background:#072326;
 }
 
 section#articles .container {
@@ -171,12 +172,14 @@ section#articles h2,
   flex: 0 0 100%;
   color: #33536b;
   text-align: center;
-  font-family: "Goldman", cursive;
+  font-family: 'Alegreya SC', serif;
   font-size: 2em;
+ 
 }
 
 section#articles h2 {
   color: #F29849;
+  
 }
 
 #articles article.post {
@@ -186,7 +189,7 @@ section#articles h2 {
   transition: 0.6s;
   font-size: 0.8rem;
   border-radius: 10px;
-  background: #fff;
+  background:grey;
 }
 
 #articles article.post h2 {
@@ -239,7 +242,7 @@ font-weight:boldest;
 
 /* Attribute Selector */
 aside[role="complementary"] {
-  background-color: #012340;
+  background-color: #072326;
   color: #ffffff;
   padding: 2.5em;
 }
