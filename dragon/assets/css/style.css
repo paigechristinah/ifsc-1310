@@ -106,13 +106,12 @@ header.primary h2 {
 }
 
 header.primary nav ul {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
-  max-width: 900px;
-  margin: 20px auto;
+  padding:0;
+  display:flex;
+  flex-direction:row;
+background-color:grey;
+justify-content:space-evenly;
+border-radius: 20px 40px 90px 20px;
 }
 
 header.primary nav li {
@@ -125,7 +124,7 @@ header.primary nav a:link,
 header.primary nav a:visited {
   color: #F29849;
   text-decoration: none;
-  background-color: #000000;
+  
   padding: 8px 16px;
   border-radius: 10px;
   transition: 0.4s;
@@ -134,14 +133,17 @@ header.primary nav a:visited {
 
 header.primary nav a:hover,
 header.primary nav a:active {
-  background-color: #ffffff;
+  background-color: black;
 }
 
 /* ------------- Content --------------- */
 
 section#content {
-  padding: 4em 0;
-  background-color: grey;
+ 
+  width:max-content;
+padding-bottom:20%;
+  background-color:grey;
+
 }
 
 section#content h2{
@@ -236,14 +238,16 @@ font-weight:boldest;
 
 #slideshow {
   padding: 4em 0;
+  background-color: grey;
+  width: max-content;
 }
 
 /* ------------- Aside --------------- */
 
 /* Attribute Selector */
 aside[role="complementary"] {
-  background-color: #072326;
-  color: #ffffff;
+  background-color: #012340;
+  color: #F29849;
   padding: 2.5em;
 }
 
@@ -261,6 +265,11 @@ aside article.widget {
   font-size: 0.7em;
   border-collapse: collapse;
 }
+table, th, td {
+  border: 1px dotted;
+  border-color: #F29849;
+}
+
 
 .widget.overview table td {
   border-bottom: 1px solid #fff;
@@ -290,7 +299,7 @@ aside article footer {
 /*------ Footer ------*/
 
 footer#colophon {
-  background-color: #012340;
+  background-color:#072326;
 }
 
 #colophon h6 {
@@ -304,7 +313,7 @@ footer#colophon {
 
 #colophon h6 a:link,
 #colophon h6 a:visited {
-  color: #034AA6;
+  color: grey;
   text-decoration:none;
 }
 
