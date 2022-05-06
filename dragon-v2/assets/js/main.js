@@ -62,4 +62,11 @@ for (i = 0; i < faq.length; i++) {
 
 
 
-  /* Slideshow data for index.html*/
+
+/*SlideShow*/
+
+  $('.lazy').slick({
+    lazyLoad: 'ondemand',
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
