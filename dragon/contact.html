@@ -12,7 +12,6 @@
 
 <body>
   <header role="banner" class="primary">
-    <img src="assets/img/SpaceX-Logo.png"/>
     <h1><a href="index.html">SpaceX Dragon</a></h1>
     <nav role="navigation">
       <ul>
@@ -25,6 +24,28 @@
   </header>
   <section id="content" class="container"> 
     <h2> Contact Form </h2>
+<p>We want to hear back from you!</p>
+<form action="action_page.php">
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+  <label for="country">Country</label>
+  <select id="country" name="country">
+    <option value="australia">Australia</option>
+    <option value="canada">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+  <label for="subject">Subject</label>
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+  <input type="submit" value="Submit">
+
+</form>
    </section>
  <aside role="complementary"></aside>
   <footer id="colophon" role="contentinfo"><h6>&copy; 2022 SpaceX |<a href="mailto:cxh@att.net"> Report a Problem</a>
@@ -32,7 +53,7 @@
     <script type="text/javascript"> var
     JFL_203214237986155 = new JotformFeedback({formId:'203214237986155', base: 'https://form.jotform.com/',
     windowTitle:'Responsive Contact Form - Default Theme', background: '#FFA500', fontcolor: '#FFFFFF' , type: 'false' , height: 500,
-    width:700, openOnLoad:false}); </script> <a class= "btn lightbox-203214237986155" style="margin-top:16px">Responsive Contact Form - Default Theme</a>
+    width:700, openOnLoad:false}); </script> <a class= "btn lightbox-203214237986155" style="margin-top:16px"></a>
     </h6>
 </footer>
 </body>
