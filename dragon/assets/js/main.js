@@ -60,3 +60,7 @@ for (i = 0; i < faq.length; i++) {
     });
   
   })(document);
+
+
+
+  /* Slideshow data for index.html*/
