@@ -1,0 +1,490 @@
+/*
+
+Stylesheet for SpaceX Dragon Website
+
+*/
+
+
+
+/* Color Theme  
+ #F29849
+ #072326
+ #012340
+ #034C8C
+ #034AA6
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #012340;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  /* Shorhand T,R,B,L*/
+  padding: 6em 2em;
+  position: relative;
+}
+
+
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/logo-2.png");
+  display: block;
+  width: 460px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2em;
+  color:#F29849;
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  padding:0;
+  display:flex;
+  flex-direction:row;
+background-color:grey;
+justify-content:space-evenly;
+border-radius: 20px 40px 90px 20px;
+}
+
+header.primary nav li {
+  list-style-type: none;
+  padding: 0;
+  width: 20%;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: #F29849;
+  text-decoration: none;
+  
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.4s;
+  display: block;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: black;
+}
+
+/* ------------- Content --------------- */
+
+section#content {
+ 
+  width:max-content;
+padding-bottom:20%;
+  background-color:grey;
+
+}
+
+section#content h2{
+  font-family: 'Alegreya SC', serif;
+  font-size: 2.2em;
+  color: #034AA6;
+  text-align:center;
+}
+
+
+/* ------------- Articles --------------- */
+
+section#articles {
+  background:#072326;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 4em 0;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #33536b;
+  text-align: center;
+  font-family: 'Alegreya SC', serif;
+  font-size: 2em;
+ 
+}
+
+section#articles h2 {
+  color: #F29849;
+  
+}
+
+#articles article.post {
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background:grey;
+}
+
+#articles article.post h2 {
+  font-size: 1.5em;
+  text-shadow: none;
+}
+
+#articles article.post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+  font-size: 0.9em;
+  color: #034AA6;
+  font-weight:bold;
+
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+  color: #F29849;
+text-decoration:none;
+font-weight:boldest;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles .post img {
+  border-radius: 10px;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+#articles li {
+  margin-bottom: 20px;
+}
+
+/* ------------- Hero --------------- */
+
+#slideshow {
+  padding: 4em 0;
+  background-color: grey;
+  width: max-content;
+}
+
+/* ------------- Aside --------------- */
+
+/* Attribute Selector */
+aside[role="complementary"] {
+  background-color: #012340;
+  color: #F29849;
+  padding: 2.5em;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+aside article.widget {
+  width: 40%;
+}
+
+.widget.overview table {
+  font-size: 0.7em;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px dotted;
+  border-color: #F29849;
+  border-bottom:1px dotted;
+}
+
+
+.widget.overview table td {
+  padding: 10px;
+}
+
+.widget.overview table td:nth-child(even) {
+  text-align: right;
+}
+aside article a:link,
+aside article a:visited {
+  color: #ffffff;
+  display: block;
+  margin-top: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+aside article a:hover,
+aside article a:active {
+  text-decoration: none;
+}
+
+aside article footer {
+  display: none;
+}
+
+/*------ Footer ------*/
+
+footer#colophon {
+  background-color:#072326;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #F29849;
+  text-align: center;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: grey;
+  text-decoration:none;
+}
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+  border-bottom: #777;
+  padding: 20px 60px;
+  text-align: center;
+  color:#F29849
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+width: 60%;
+margin: auto;
+
+}
+
+.faq-page {
+
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+
+}
+.faq-body{
+  margin: auto;
+ width: 50%; 
+ padding: auto;
+ 
+}
+
+.active,
+.faq-page:hover {
+  background-color: #F9F9F9;
+}
+
+.faq-body {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.faq-page:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+
+}
+
+
+/* take out if other css is messed up*/
+h2 {
+  margin-bottom: 50px;
+}
+
+.container {
+  text-align: center;
+  overflow: hidden;
+  width: 800px;
+  margin-right:0;
+}
+
+.container table {
+  width: 0%;
+}
+
+.container td, .container th {
+  padding: 10px;
+}
+
+.container td:first-child, .container th:first-child {
+  padding-left: 20px;
+}
+
+.container td:last-child, .container th:last-child {
+  padding-right: 20px;
+}
+
+.container th {
+  border-bottom: 1px solid grey;
+  position: relative;
+}
+
+
+
+/* Slideshow CSS for index.html*/
