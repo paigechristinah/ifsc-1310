@@ -1,0 +1,23 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*---------Utility Classes--------*/
+
+
+  body{
+      background-color: #F294D9;
+  }
+
+  body h1{
+      text-align: center;
+      color:#8C6A5E
+  }
+
