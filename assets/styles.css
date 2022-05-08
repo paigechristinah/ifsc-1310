@@ -13,11 +13,20 @@ html {
 
 
   body{
-      background-color: #F294D9;
+      background-color: #D9A78B;
   }
 
   body h1{
       text-align: center;
-      color:#8C6A5E
+      color:#401404
   }
 
+body h2{
+  text-align: center;
+  color:#401404
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#734930
+}
